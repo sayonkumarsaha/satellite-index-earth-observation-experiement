@@ -1,0 +1,11 @@
+#Evaluation of Storage Approaches for Processed Earth Observation Data from Sentinel-2A
+
+*Summer 2016*
+
+This work was done as a part of Sayon Kumar Saha's masters thesis in Summer 2016 under the guidance and mentorship of Dipl.-Inf. Hinnerk Gildhoff from SAP HANA Spatial and Earth Obsevation,  Dr.-Ing. Sheraz Ahmed from German Research Centre for Artificial Intelligence (DFKI GmbH), and Prof. Dr. Prof. h.c. Andreas Dengel from Technische Universitat Kaiserslautern
+
+##Goal of the experiments:
+The  work aims to narrow the gap between satellite imagery community and business world by finding out the best storage strategy for processed Earth Observation (EO) data, as a part of an improved Spatial Data Infrastructure (SDI) with SAP HANA. In this context, three approaches to store EO data are proposed, namely Vectorization approach, File-system approach, and Binary Large Object (BLOB) approach. The proposed storage approaches are evaluated in detail both in terms of space and time consumption, on publicly available dataset by European Space Agency which is sensed and ingested by Sentinel-2A satellite. The dataset used for the experiments correspond to satellite imagery of approximately 45,050,000 km^2 area of the earth's surface (1.8 Terabyte is size) sensed by the satellite in one single day. Rather than storing the raw EO data, a specialized feature i.e., Normalized Difference Vegetation Index (NDVI) is extracted and stored using the proposed approaches. The time taken for the intermediate steps of NDVI computation has been evaluated. Evaluation results for storage approaches based on space and time consumption reveal that File-system approach with Geo-TIFF image format is best suited to store processed EO data. The storage approach as a part of the SDI is applied to a case study i.e., the Fort McMurray wildfire in Canada for change analysis of the burnt area.
+
+##Note:
+This repository contains only part of the code written for performing the experiments. The Research Journal is available on request.
